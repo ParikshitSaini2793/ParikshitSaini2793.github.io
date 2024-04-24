@@ -12,16 +12,20 @@ tags:
 #### CLOUD COMPUTING LAB IA-2
 <br>
 
-Hey everyone, In this blog post we will be deploying a full stack web application using Docker. The application will be split into three microservices. 
+Hey everyone, in this blog post, we're diving into the world of deploying full-stack web applications using Docker, breaking it down into three distinct microservices:
 
-1. Frontend Container of ReactJs 
-2. Backend Container of NodeJs
-3. Database Container of MongoDB
 
-Before we start with the deployment, let's understand what Docker is and why we need it.
-Docker is a platform that allows you to develop, test, and deploy applications in containers. Containers are lightweight, standalone, and executable packages of software that include everything needed to run an application: code, runtime, system tools, system libraries, and settings. Containers are isolated from each other and from the underlying host, which means that they can run the same application on different environments without any changes. This makes it easy to deploy applications in a consistent and reproducible way. 
+1. Frontend Container powered by ReactJS
+2. Backend Container running NodeJS
+3. Database Container utilizing MongoDB
 
-Docker also provides tools for managing containers, such as Docker Compose, which allows you to define and run multi-container applications. In this blog, we will be using Docker Compose to define and run our full stack web application. Let's start
+
+But before we delve into the deployment process, let's take a moment to understand what Docker is and why it's a game-changer.
+
+## Understanding Docker:
+Docker is more than just a platform; it's a paradigm shift in how we develop, test, and deploy applications. At its core, Docker utilizes containers—lightweight, self-contained packages of software containing everything an application needs to run. They ensure consistency across diverse environments, making deployment a breeze.
+
+Docker doesn't stop there; it offers a suite of tools for managing containers. One such tool is Docker Compose, which simplifies the orchestration of multi-container applications. In this blog, we'll harness the power of Docker Compose to streamline our full-stack web application deployment. Let's get started.
 
 #### 1. Crafting a Full Stack Application or Utilizing an Existing One based on React.js, Node.js, and MongoDB
 
@@ -30,7 +34,7 @@ I've chosen an application forked from my GitHub, or feel free to leverage any e
 Here's the directory structure of our application:
 
 ```bash
-GFG-HACK/
+keeper-MERN/
 └── client/
 └── server/
 ```
@@ -62,9 +66,8 @@ Before creating the Dockerfile for the ReactJs server, make sure you have a buil
 "test": "react-scripts test",
 "eject": "react-scripts eject"
 }
-
-
-**This is what your final Dockerfile should look like:**
+```
+<br>
 
 ```Dockerfile
 FROM node:16
@@ -255,10 +258,6 @@ docker run -dp 5000:5000 <DockerHubUsername>/<RepositoryName>:server
 
 ![server-net](/assets/images/Screenshot%202024-04-24%20004429.png)  
 
-<br>
-![run_container](/assets/images/run_container.png)  
-<br>
-
 **Once all the containers are up and running, you can test the app at** ```` http://localhost:3000 ````
 
 This is how the website will look like:  
@@ -268,9 +267,9 @@ This is how the website will look like:
 <br>
 
 
-**We have successfully deployed our three-tier MERN stack application with docker!**
+**And voila! We've successfully deployed our three-tier MERN stack application with Docker.**
 
 #### Conclusion:
-By containerizing your MERN stack application with Docker and leveraging Docker networks, you've achieved a portable, efficient, and scalable development environment. This approach streamlines development workflows, simplifies collaboration, and paves the way for seamless deployment to production.
+By containerizing our MERN stack application with Docker and leveraging Docker networks, we've unlocked a portable, efficient, and scalable development environment. This streamlined approach simplifies collaboration and ensures seamless deployment to production.
 
-Remember, this is just the beginning!  Explore further optimizations for production environments, such as volume management for persistent data storage and integrating with container orchestration tools like Kubernetes. As your MERN application grows, Docker will continue to be a valuable asset in your development toolbox.
+But remember, this is just the beginning! There are endless possibilities for further optimization, such as volume management for persistent data storage and integration with container orchestration tools like Kubernetes. As your MERN application evolves, Docker will remain an invaluable asset in your development toolkit.

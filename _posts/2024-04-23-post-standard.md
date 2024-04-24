@@ -9,7 +9,11 @@ tags:
   - standard
 ---
 
+#### CLOUD COMPUTING LAB IA-2
+<br>
+
 Hey everyone, in this blog post, we're diving into the world of deploying full-stack web applications using Docker, breaking it down into three distinct microservices:
+
 
 1. Frontend Container powered by ReactJS
 2. Backend Container running NodeJS

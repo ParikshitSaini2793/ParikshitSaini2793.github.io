@@ -9,6 +9,9 @@ tags:
   - standard
 ---
 
+#### CLOUD COMPUTING LAB IA-2
+<br>
+
 Hey everyone, In this blog post we will be deploying a full stack web application using Docker. The application will be split into three microservices. 
 
 1. Frontend Container of ReactJs 

@@ -29,7 +29,7 @@ I have used an application forked on my own github or use any existing applicati
 This is the file structure of our application:
 
 ```bash
-GFG-HACK/
+keeper-MERN/
 └── client/
 └── server/
 ```
@@ -61,7 +61,8 @@ Before creating the Dockerfile for the ReactJs server, make sure you have a buil
 "test": "react-scripts test",
 "eject": "react-scripts eject"
 }
-
+```
+<br>
 
 **This is what your final Dockerfile should look like:**
 

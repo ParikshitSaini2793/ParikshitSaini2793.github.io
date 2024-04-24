@@ -253,10 +253,6 @@ docker run -dp 5000:5000 <DockerHubUsername>/<RepositoryName>:server
 
 ![server-net](/assets/images/Screenshot%202024-04-24%20004429.png)  
 
-<br>
-![run_container](/assets/images/run_container.png)  
-<br>
-
 **Once all the containers are up and running, you can test the app at** ```` http://localhost:3000 ````
 
 This is how the website will look like:  

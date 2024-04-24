@@ -10,8 +10,6 @@ tags:
 ---
 
 #### CLOUD COMPUTING LAB IA-2
-<br>
-
 Hey everyone, in this blog post, we're diving into the world of deploying full-stack web applications using Docker, breaking it down into three distinct microservices:
 
 

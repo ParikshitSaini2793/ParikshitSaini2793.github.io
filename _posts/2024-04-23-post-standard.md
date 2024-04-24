@@ -9,16 +9,17 @@ tags:
   - standard
 ---
 
-Hey everyone, In this blog post we will be deploying a full stack web application using Docker. The application will be split into three microservices. 
+Hey everyone, in this blog post, we're diving into the world of deploying full-stack web applications using Docker, breaking it down into three distinct microservices:
 
-1. Frontend Container of ReactJs 
-2. Backend Container of NodeJs
-3. Database Container of MongoDB
+Frontend Container powered by ReactJS
+Backend Container running NodeJS
+Database Container utilizing MongoDB
+But before we delve into the deployment process, let's take a moment to understand what Docker is and why it's a game-changer.
 
-Before we start with the deployment, let's understand what Docker is and why we need it.
-Docker is a platform that allows you to develop, test, and deploy applications in containers. Containers are lightweight, standalone, and executable packages of software that include everything needed to run an application: code, runtime, system tools, system libraries, and settings. Containers are isolated from each other and from the underlying host, which means that they can run the same application on different environments without any changes. This makes it easy to deploy applications in a consistent and reproducible way. 
+Understanding Docker:
+Docker is more than just a platform; it's a paradigm shift in how we develop, test, and deploy applications. At its core, Docker utilizes containers—lightweight, self-contained packages of software containing everything an application needs to run. They ensure consistency across diverse environments, making deployment a breeze.
 
-Docker also provides tools for managing containers, such as Docker Compose, which allows you to define and run multi-container applications. In this blog, we will be using Docker Compose to define and run our full stack web application. Let's start
+Docker doesn't stop there; it offers a suite of tools for managing containers. One such tool is Docker Compose, which simplifies the orchestration of multi-container applications. In this blog, we'll harness the power of Docker Compose to streamline our full-stack web application deployment. Let's get started.
 
 #### 1. Create a full stack application or use an existing one built on ReactJs, NodeJs and MongoDB.
 

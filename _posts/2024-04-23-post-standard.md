@@ -23,12 +23,11 @@ Docker is more than just a platform; it's a paradigm shift in how we develop, te
 
 Docker doesn't stop there; it offers a suite of tools for managing containers. One such tool is Docker Compose, which simplifies the orchestration of multi-container applications. In this blog, we'll harness the power of Docker Compose to streamline our full-stack web application deployment. Let's get started.
 
-#### 1. Create a full stack application or use an existing one built on ReactJs, NodeJs and MongoDB.
+#### 1. Crafting a Full Stack Application or Utilizing an Existing One based on React.js, Node.js, and MongoDB
 
+I've chosen an application forked from my GitHub, or feel free to leverage any existing application you possess. Just ensure it aligns with the specified tech-stack.
 
-I have used an application forked on my own github or use any existing application you have. Just make sure it has the same tech-stack.
-
-This is the file structure of our application:
+Here's the directory structure of our application:
 
 ```bash
 keeper-MERN/
@@ -36,23 +35,23 @@ keeper-MERN/
 └── server/
 ```
 
-#### 2. Create a repository on Docker Hub to store your Docker images.
+#### 2. Establishing a Repository on Docker Hub for Storing Docker Images
 
-Go to Docker Hub and create a new repository to store your Docker images. You can create a public or private repository depending on your requirements. Once you have created the repository, note down the repository name as we will need it later to push our Docker images to the repository.
+Navigate to Docker Hub and establish a new repository to house your Docker images. Depending on your needs, opt for either a public or private repository. After creating the repository, jot down its name as we'll require it later for pushing our Docker images.
 
-This is what your repository should look like  
+Below is an illustration of your repository on Docker Hub:
 <br>
 ![Docker Hub](/assets/images/Screenshot 2024-04-23 235842.png)  
 <br>
 
 
-#### 3. Create a Dockerfile for each of the services.
+#### 3. Crafting a Dockerfile for Each Service
 
-Dockerfile is a text file that contains a set of instructions that are used to build a Docker image. The Docker image is a lightweight, standalone, and executable package of software that includes everything needed to run an application. The Dockerfile contains instructions to build the image, such as the base image, working directory, dependencies, and commands to run the application.  
+A Dockerfile is a textual blueprint containing instructions to build a Docker image. It delineates directives such as the base image, working directory, dependencies, and commands essential for running the application.  
 <br>
 
 
-**3.1 Dockerfile for ReactJs server at path client/Dockerfile**
+**3.1 Dockerfile for React.js Server located at client/Dockerfile**
 
 Before creating the Dockerfile for the ReactJs server, make sure you have a build script in your package.json file. If not, add the following script to your package.json file:
 
@@ -86,9 +85,9 @@ CMD ["npx", "serve", "-s", "build"]
 <br>
 
 
-**Now we will build the Docker image from the created Dockerfile and push it to the Docker Hub repository, follow the below steps carefully**
+**Now, let's build the Docker image from the created Dockerfile and push it to the Docker Hub repository. Follow the subsequent steps meticulously:**
 
-1. Build the Docker image using the following command:
+Build the Docker image using the following command:
   
   ```bash 
   docker build -t <DockerHubUsername>/<RepositoryName>:client .

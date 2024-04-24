@@ -64,8 +64,6 @@ Before creating the Dockerfile for the ReactJs server, make sure you have a buil
 ```
 <br>
 
-**This is what your final Dockerfile should look like:**
-
 ```Dockerfile
 FROM node:16
 

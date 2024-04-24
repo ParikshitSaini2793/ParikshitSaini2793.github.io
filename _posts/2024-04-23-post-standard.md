@@ -11,12 +11,14 @@ tags:
 
 Hey everyone, in this blog post, we're diving into the world of deploying full-stack web applications using Docker, breaking it down into three distinct microservices:
 
-Frontend Container powered by ReactJS
-Backend Container running NodeJS
-Database Container utilizing MongoDB
+1. Frontend Container powered by ReactJS
+2. Backend Container running NodeJS
+3. Database Container utilizing MongoDB
+
+
 But before we delve into the deployment process, let's take a moment to understand what Docker is and why it's a game-changer.
 
-Understanding Docker:
+## Understanding Docker:
 Docker is more than just a platform; it's a paradigm shift in how we develop, test, and deploy applications. At its core, Docker utilizes containers—lightweight, self-contained packages of software containing everything an application needs to run. They ensure consistency across diverse environments, making deployment a breeze.
 
 Docker doesn't stop there; it offers a suite of tools for managing containers. One such tool is Docker Compose, which simplifies the orchestration of multi-container applications. In this blog, we'll harness the power of Docker Compose to streamline our full-stack web application deployment. Let's get started.
